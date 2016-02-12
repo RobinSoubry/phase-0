@@ -49,3 +49,22 @@ Yes, the instructions set forth by Zed. A. Shaw are very clear. I did however sp
 -help: A command (Windows) that shows you the use of a specific command, the syntax etc. In unix, you can summon this command through “man”
 
 ## Forking and Cloning
+**If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be?**
+
+Create a new repository: Go to your GitHub account on github.com and click on the plus icon next to your avatar (upper right corner) In the dropdown, select “New Repository”. Now you will have to name your repository, chose whether to keep it private or publicly accessible and select the license rights to the content of your repository (if you would make it public). Click create and you’re all set.
+
+Fork a repository: Click on the “Fork” icon on the github page of that repository. This will prompt a page where you can select where you want to fork it to (ie. your own profile, an organization etc.) GitHub will then copy all the content of the original repository to the location you specified.
+
+Clone a repository: Copy the URL of the GitHub repository to your clipboard. Go to your Terminal and navigate to the folder where you want to obtain the files from GitHub (using the **cd** command). Once there you type the commando git clone [URL] and press enter.
+
+[URL] represents the url that you copied from the GitHub repository page. You will see the cloning progress in the Terminal window, but to be sure it’s safe to double check by using the **ls** command and see if the new repository appeared in the desired directory.
+
+**Why would you fork a repository as opposed to create a new one?**
+
+A forked repository is a copy of an existing repository, including all the change history that is associated to that repository. If you create a new one, you will dismiss a lot of existing information. Next to that it’s convenient to not have to transfer the content manually from the original repository to the new one (forked repositories take all the content with them).
+
+**What struggles did you have setting up git and GitHub? What did you learn in the process?**
+
+The video’s clearly explained the purpose of git and GitHub, and I managed to create, fork and clone both GitHub repositories to my local directory easily. I now better understand what I was doing in the week 0 computer setup (where I had no clue what I was doing).
+
+I had some struggle to open the p0-cli-exploration files in sublime as I was trying to use the command **sublime p0-cli-exploration**, but some search on Google and in my .bash-profile revealed that I should use **subl p0-cli-exploration** instead…
