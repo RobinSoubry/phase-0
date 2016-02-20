@@ -41,6 +41,7 @@ User Experience design is a set of principles aimed to make users of an applicat
 * Create a logical navigation of a site (or an individual page)
 * Pick suitable fonts, color-pallettes, images according to the user group
 * Etc.
+
 There are various techniques to help the designer in this role:
 - Creating user scenario's or persona's
 - Test (and track) real user behavior on different versions of a design to see what work's best for the purpose of the design
