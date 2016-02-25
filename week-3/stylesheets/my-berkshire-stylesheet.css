@@ -1,0 +1,56 @@
+body {
+  color: #000080;
+  background-color: #ffffff;
+}
+
+a {
+  color: #800080;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.capital {
+  font-size: 1.5em;
+}
+
+.line-break {
+  display: block;
+}
+
+.left-float {
+  float: left;
+  width: 49%;
+}
+
+.right-float {
+  float: right;
+  width: 49%;
+}
+
+ul {
+  list-style: none;
+}
+
+.detail-text {
+  font-size: 0.5em;
+  color: black;
+}
+
+.horizontal-line {
+  border-top: 1px solid black;
+}
+
+.clear {
+  clear: both;
+}
