@@ -1,3 +1,36 @@
+/*
+##What is important to know when linking an external file (like a stylesheet) to an HTML file?##
+When linking an external stylesheet to your HTML file there are three attributes to to the <link> that need to be defined:
+- rel (relation): Tell the browser it's a stylesheet;
+- type: You want to tell the browser that it's textual css code that needs to be processed by using "text/css";
+- href: Specify the location of your css file;
+Next to these, it's important to remember that the <link> tag should be placed in the <head> of the document, and that it's a self closing tag.
+
+
+##What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?##
+We split the original <ul> in two different <ul> and wrapped these each in a <div>. These <div> elements were then floated, one left and one right.
+To make sure they properly render into two columns, we specified the width of each <div> to be 49%.
+To better see what's going on, we gave the <div> a 1px solid border (which we remoed once everything was set well in place)
+After we positioned the two columns, we added a clear attribute to the next div.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+Well every CSS manipulation is composed of:
+- A selector: HEre we used the tag itself and we created several classes;
+- A property: for example font-size, font-weight, etc;
+- A value: Here it depended a bit on the property that we wanted to change. For example, we manipulated the font-size by using "em";
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why?
+If you didn't, how would you know which one to add to your HTML?
+We created several classes in the HTML document, and sometimes we added multiple classes to the same div because they were used several times in the code 
+  For example center text was used multiple times.
+We preffered to use the html elements and classes above using ID's because it allowed us to keep the specificity number down and allowed reusability.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I think I actually preferred our code because it's much cleaner than the basic Berkshire Hathaway.
+  For example, on the original website, there is a confusing mix of a table with embedded <ul> tags to provide content.
+  This makes it very hard to read through the source code.
+*/
+
 body {
   color: #000080;
   background-color: #ffffff;
