@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [with: Robin ].
+# I worked on this challenge [with: Shaun Sweet].
 
 
 #Method takes an integer 
