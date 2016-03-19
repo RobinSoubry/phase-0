@@ -77,28 +77,28 @@ p serving_size_calc("brownie", 10)
 #  Reflection
 =begin
 What did you learn about making code readable by working on this challenge?
-	Ouch! This was a pain to figure out what the code was doing.
+	Ouch! It was a pain to figure out what the code was doing.
 	At first you get some idea what each set of code-lines is doing, but our assumptions were often wrong.
-	My key takeaway is to really take apart code you don't understand, comment-out all other parts and simply run it to test what it actually does.
+	My key take-away is to take apart the code you don't understand, comment-out all other parts and simply run it to test what it actually does.
+		This is approach should not only be the way to go for this challenge, but rather a reflex during the coding career.
 
 Did you learn any new methods? What did you learn about them?
-
+	I knew about the .any? and the .fetch methods, but never actually used them in my code. 
+		.any? checks if a certain value exists. In this case, it was used to verify whether a key "item_to_make" occured in a hash.
+			.fetch() is a way of accessing the values in a hash.
 
 What did you learn about accessing data in hashes? 
-	By profiding only one placeholder when looping through the 
-	library.each do |food|
-#     if library[food] != library[item_to_make]
-#       error_counter += -1
-#     end
-#   end
-
+	By providing only one placeholder when looping through the had, you get an array of with sub-arrays of the key-value pairs. As the code blow shows.
+		library.each do |food|
+    		if library[food] != library[item_to_make]
+    			error_counter += -1
+    		end
+		end
 
 What concepts were solidified when working through this challenge?
-
-
-
-
-
-
+	To me the challenge was a good trigger to get curious again.
+		I studied industrial design before and spent countless hours in taking apart products or objects to better understand how they work under the hood.
+		Coding is not any different: If you don't understand it, take it apart and see what block delivers exactly what functionality.
+	
 =end
 
