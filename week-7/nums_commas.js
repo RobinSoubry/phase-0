@@ -56,3 +56,38 @@ separateComma(12345678)
 
 
 // Reflection
+/*
+What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+	The general approach was very similar as the challenge in week 5.
+	Because we had both less experience in javascript, and lacked both vocabulary and grammar, it took us a bit more time to come up with a good solution.
+
+What did you learn about iterating over arrays in JavaScript?
+	JavaScript has much less built-in methods for iterating over arrays as Ruby does.
+	So the code used is much more explicit and 'basic': We used a more counters and temporary variables than we would in Ruby.
+
+What was different about solving this problem in JavaScript?
+	JavaScript is much more computer-oriented (and less made for human reading of the code).
+		so we have created more temporary variables and we were more explicit in the design of iterations.
+	JavaScript has a more complicated syntax than Ruby, so we needed to pay more attention to declaring variables or closing statements with ; etc.
+	We were both not very familiar with JavaScript, so we took some time to look up and experiment with methods and functions.
+		Because at first we tried to write Ruby in JavaScript-style… but this obviously didn't work :-)
+
+What built-in methods did you find to incorporate in your refactored solution?
+	We used the .splice() method
+	This array method takes two or three arguments and:
+	* if two arguments: * Starting at the first argument
+						* It takes the number (of array-elements) of the second argument and removes it from the array
+						* (and returns these to the console)
+		EXAMPLE: 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+					fruits.splice(2, 1);
+					=> ["Apple"]
+					console.log(fruits) => ["Banana", "Orange", "Mango"]
+	* if three arguments: 	* Starting at the first argument
+							* It takes the number (of array-elements) of the second argument and removes it from the array
+							* (and returns these to the console)
+							* It injects the third argument(s) as array elements right after the first argument-position.
+		EXAMPLE: 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+					fruits.splice(2, 1, "Lemon", "Kiwi");
+					=> ["Apple"]
+					console.log(fruits) => ["Banana", "Orange", "Lemon", "Kiwi" , "Mango"];
+*/
