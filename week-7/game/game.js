@@ -335,12 +335,17 @@ What was the most difficult part of this challenge?
   - I did not have a huge difficulty with the code (but I'm sure that things can be simplified A LOT with good refactoring). I tried to reduce the repetition between line 305 - 326 by using an array of all the obstacle-names, and iterate over it with for(var x in array)… but didn't get it to work as I hoped.
 
 What did you learn about creating objects and functions that interact with one another?
-
-
+  I created quite some objects to interact with each other through calling functions.
+  At first I was enthusiastically naming new variables, object paramters etc…
+    but after a while I realized I needed more structure to not get confused.
+    I'm sure the code could be improved a lot still if I were to use better names and try to keep values 'local' as much as possible.
 
 Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and 
 how do they work?
-
+  I had spent a lot of time in 'designing' the game and making the basics work…
+  So unfortunately I haven't had enough time to look in depth for good refactoring alternatives.
+  The only thing I used was the Math.round () method that rounds up/down a value to the nearest integer.
+    2.01 will round down to two and 2.99 will round up to three.
 
 How can you access and manipulate properties of objects?
   There are several ways/notations to access / or manipulate the properties of objects:
