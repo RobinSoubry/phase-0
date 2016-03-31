@@ -1,6 +1,6 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
+I worked on this challenge with: Alicia Briceland & Robin Soubry
 This challenge took me [#] hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
@@ -15,41 +15,80 @@ var scores = [ [80, 70, 70, 100],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
 
-
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+// var gradebook = {};
 
+// gradebook["Joseph"] = {};
+// gradebook["Susan"] = {};
+// gradebook["William"] = {};
+// gradebook["Elizabeth"] = {};
 
+// gradebook["Joseph"]["testScores"] = scores[0];
+// gradebook["Susan"]["testScores"] = scores[1];
+// gradebook["William"]["testScores"] = scores[2];
+// gradebook["Elizabeth"]["testScores"] = scores[3];
 
+// console.log(gradebook);
+// // var testScores = gradebook[name]
 
+// gradebook.addScore = function(name, score) {
+//   gradebook[name]["testScores"].push(score); 
+// }
 
+// var average = function (array){
+//   var sum = array.reduce (function(a,b) {return a + b;});
+//   var avg = sum / array.length;
+//   return avg;
+// }
 
+// gradebook.getAverage = function(name){
+//   return average(gradebook[name]["testScores"]);
+// }
 
 // __________________________________________
 // Refactored Solution
+var gradebook = {};
 
+for (var i = 0; i < students.length; i++){
+  gradebook[students[i]] = {}
+}
 
+for (var i = 0; i < students.length; i++){
+  gradebook[students[i]]["testScores"] = scores[i];
+}
 
+gradebook.addScore = function(name, score) {
+  gradebook[name]["testScores"].push(score); 
+}
 
+var average = function (array){
+  var sum = array.reduce (function(a,b) {return a + b;});
+  return sum / array.length;
+}
 
-
+gradebook.getAverage = function(name){
+  return average(gradebook[name]["testScores"]);
+}
 
 
 // __________________________________________
 // Reflect
+/*
+What did you learn about adding functions to objects?
+	Adding a function to an object is relatively straightforward.
+	Instead of declaring a variable to equal a function, you can declare a parameter to equal that function.
 
+How did you iterate over nested arrays in JavaScript?
+	In the refactored solution, we used a for loop to iterate over the scores array and push each element to the respective student (parameter in the object).
+	To access, set or push the array elements, we used the bracket notation. This notation allows to use the 'i' counter of the iteration as the index of the array at each iteration.
 
-
-
-
-
-
-
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+	Yes, we used the reduce method. This method, just like in Ruby allows sum up all the elements in an array.
+	The code however is much harder to read and interpret, but I found the Mozilla docs very useful to get a better understanding.
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+*/
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
