@@ -38,19 +38,19 @@
 
 #Release 7: Reflect#
 ##What are databases for?##
-	Databases store data in a structured way, so that it can be easily searched and accessed in the future.
+Databases store data in a structured way, so that it can be easily searched and accessed in the future.
 
 ##What is a one-to-many relationship?##
-	A one-to-many relationship is a cardinality type.
-	In databases, each entity must be unique: In the outfit example ONE person may have MANY outfits. This doesn't mean that we want to duplicate the other non-outfit related information for each outfit this perosn has. In databases (as in other programming languages), we want to be DRY and avoid repetition at all costs! If for example you need to change the nickname of a person, you won't be required to update it for every line in the database.
+A one-to-many relationship is a cardinality type.
+In databases, each entity must be unique: In the outfit example ONE person may have MANY outfits. This doesn't mean that we want to duplicate the other non-outfit related information for each outfit this perosn has. In databases (as in other programming languages), we want to be DRY and avoid repetition at all costs! If for example you need to change the nickname of a person, you won't be required to update it for every line in the database.
 
 ##What is a primary key? What is a foreign key? How can you determine which is which?##
-	A __primary key (PK)__ is a unique identifier for a record in a database. Every instance must have a primary key and this key must be unique for all the rows in that table.
-	A __foreign key (FK)__ is a column in another table that refers to the primary key of another entity.
-	You can distinguish PKs from FKs because they have to be unique. FKs don't have this requirement (you can have repetition of a value in the FK column)
+* A __primary key (PK)__ is a unique identifier for a record in a database. Every instance must have a primary key and this key must be unique for all the rows in that table.
+* A __foreign key (FK)__ is a column in another table that refers to the primary key of another entity.
+* You can distinguish PKs from FKs because they have to be unique. FKs don't have this requirement (you can have repetition of a value in the FK column)
 
 ##How can you select information out of a SQL database? What are some general guidelines for that?##
-	* You open the statement with SELECT and define which columns you want to return.
-	* You define which table you want to select from with the keyword FROM + table_name
-	* You apply conditional statements, ordering logic etc.
-	* You close the statement with a semi-colon ;
+* You open the statement with SELECT and define which columns you want to return.
+* You define which table you want to select from with the keyword FROM + table_name
+* You apply conditional statements, ordering logic etc.
+* You close the statement with a semi-colon ;
