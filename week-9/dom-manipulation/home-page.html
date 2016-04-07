@@ -30,15 +30,23 @@
 </html>
 
 <!-- Add your reflection here -->
-<!-- # This challenge took me [#] hours. -->
+<!-- # This challenge took us [0.5] hours. -->
 
 <!--
 What did you learn about the DOM?
-
-
+  The DOM (Document Object Model) is a hierarchical tree-like structure of all elements in an HTML document. Each element in the DOM is a 'node' that can be accessed through the DOM API, which makes them available for manipulations with JavaScript. With JavaScript, you could then modify the styling (colors, borders, display properties etc.) and even generate, delete or modify the actual HTML code.
 
 What are some useful methods to use to manipulate the DOM?
+  To manipulate the DOM, there are several methods that give 'access to the node': Just like CSS selectors, you can summon an element by it's element-type, class or id
+    * node.getElementsByTagName('ID_name') => Accesses elements based on their HTML tag type (ie. 'div', 'p', …)
+    * node.getElementsByClassName('class_name') => Accesses elements based on their class.
+    * node.getElementById('element_name') => Accesses elements based on their ID (#)
 
+  Once you have elements selected, there are plenty of methods to manipulate the element:
+  * Change style: style.property_name = "value";
+    example: document.getElementById("release-3").style.backgroundColor = "#955251";
+  * Add / remove classes: This is helpful when for example changing an appearance after a specific action is completed (ie. change the colors and/or page when a form is submitted)
+    document.getElementById("release-0").className = 'done';
 
 
 -->
