@@ -139,16 +139,18 @@ student5 = Student.new("Robin",[100,100,100,100,100])
 
 students = [student1, student2, student3, student4, student5]
 
-student1.average
-  def linear_search(list, name)
+def linear_search(list, name)
+
     list.each do |individual|
       if (individual.first_name == name)
         return 0
-      else
-        return -1
       end
     end
-  end
+    return -1
+end
+
+
+
 
 # DRIVER TESTS GO BELOW THIS LINE
 # Initial Tests:
