@@ -106,8 +106,6 @@ end
   p @decoded_sentence.join("")
 end
 
-
-
 # Driver Test Code:
 
 # p dr_evils_cipher("m^aerx%e&gsoi!")
@@ -126,3 +124,18 @@ dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?")
 
 # # Reflection
 # # Keep your reflection limited to 10-15 minutes!
+=begin
+What concepts did you review in this challenge?
+  * Generating arrays with ranges
+  * Accessing elements in an array
+  * Array manipulations (push elements)
+  * If - elsif - else statements
+
+What is still confusing to you about Ruby?
+  *Nothing in particular. This challenge was relatively straightforward.
+  I sometimes however mix-up JavaScript & Ruby code. 
+
+What are you going to study to get more prepared for Phase 1?
+  I took a lot of notes during each phase-0 week. I hope to find the time to go through them to refresh my knowledge abou these.
+  As for the confusion between JavaScript and Ruby, I will try to make a cheat-sheet with syntax.
+=end

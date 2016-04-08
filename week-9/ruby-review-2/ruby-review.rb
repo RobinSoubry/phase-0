@@ -170,3 +170,20 @@ p linear_search(students, "Alex") == 0
 p linear_search(students, "NOT A STUDENT") == -1
 
 # Reflection
+=begin
+What concepts did you review in this challenge?
+  We reviewed following concepts in this challenge:
+  * Instance variables
+  * Creation of a class with pre-defined parameters or parameters set with initialize
+  * Iterations with each
+  * The reduce method to sum up elements of an array
+  * Accessing named objects and array elements.
+
+What is still confusing to you about Ruby?
+  I'm still not very familiar with reader / writer methods and accessor elements…
+  I understood the logic during week-6, but I'm not sure if we have used it properly in thi schallenge.
+
+What are you going to study to get more prepared for Phase 1?
+  Review challenge 6.4 'Accessing attributes'
+
+=end
